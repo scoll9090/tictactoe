@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>What's up </title>
+<script src="tic.js"></script>
+<link  href="tac.css" typer="text/css" rel="stylesheet"></link>
+</head>
+
+
+
+
+
+
+<body>
+
+<ul class="sel-wrapper">
+
+	<input id="Xtab" type="radio" name="Letter" value="X"  checked></input>
+	<label for="Xtab" class="tab">X</label>
+	<input id="Otab" type="radio" name="Letter" value="O" ></input>
+	<label for="Otab" class="tab">O</label>
+
+</ul>
+
+<canvas id="board" width="500px" height='500px'></canvas>
+
+	<div class="control-wrap">
+		<ul  class="sel-wrapper">
+			<input id="Normal" type="radio" name="difficulty" value="normal" checked></input>
+			<label for="Normal" class="tab">Normal</label>
+			<input id="Impossible" type="radio" name="difficulty" value="Impossible"></input>
+			<label for="Impossible" class="tab">Impossible</label>
+		</ul>
+
+			<button id="Reset">Reset</button>
+</div>
+
+
+<script>
+var ResetButton = document.getElementById("Reset");
+ResetButton.addEventListener("click",Reset,false);
+
+
+
+	function Reset(){
+
+		if(g.canInteract == true){
+
+		g.b.canvas.removeEventListener("mousedown",g.b.mouseDown);
+		g = new Game;
+}
+
+}
+
+		g = new Game;
+
+
+</script>
+</body>
+
+
+</html>

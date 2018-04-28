@@ -1,0 +1,56 @@
+body{
+
+padding:20px;
+}
+
+.sel-wrapper{
+	display:flex;
+	flex-direction:row;
+
+}
+.tab{
+	width:120px;
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#fff;
+
+
+}
+input[name="Letter"],input[name="difficulty"]{
+	display:none;
+}	
+input[name="Letter"]:checked + .tab,input[name="difficulty"]:checked + .tab{
+
+	border:1px solid #f4f4f4;
+	border-top:2px solid red;
+	border-bottom: 1px solid #fff;
+}
+
+#Reset{
+	padding: 0px;
+    margin: 0px;
+    width: 80px;
+    height: 40px;
+    background-color: skyblue;
+    border: none;
+	color:white;
+
+}
+
+#board{
+	width:500px;
+	height:500px;
+	margin: auto;
+	display: block;
+}
+
+.control-wrap{
+
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+
+}
+
