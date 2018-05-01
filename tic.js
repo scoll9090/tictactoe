@@ -428,7 +428,7 @@ class Board{
 
 }
 	
-	mouseDown(){
+	mouseDown(event){
 
 		if(this.g.canmove){
 
